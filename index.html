@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo1.ico" alt="MyOnlineform.com">
+            
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Service</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+          
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="darkbtn"><span></span>
+        </button>
+    </nav>
+    <section id="contact">
+        <div id="card">
+           <div class="face">
+               <h2>login</h2>
+               <div class="input">
+                   <div class="inputbox">
+                       <label>Username</label>
+                       <input type="text" name="" placeholder="enter the email" id="username">
+                   </div>
+
+                   <div class="inputbox">
+                    <label>Password</label>
+                    <input type="text" name="" placeholder="********" id="password">
+                    </div>
+
+                    <div class="inputbox">
+                        
+                        <input type="submit" name="" value="Sign In" onclick="validate()">
+                    </div>
+
+               </div>
+               <p class="forget">Forget Password? <a href="#" onclick="message()">Click Here</a></p>
+
+           </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

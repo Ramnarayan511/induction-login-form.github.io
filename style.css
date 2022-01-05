@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 30px;
+    margin: 3px 6px;
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+#navbar::before{
+    content: "" ;
+    background-color: #1c1c25;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   
+    
+}
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition:  0.5s;
+    margin-left: 500px;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition:  0.5s;margin-left: 0.5s;
+}
+body{
+    overflow: hidden;
+    color: white;
+
+}
+
+
+
+#contact::before,#card::before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(#f00,#f0f);
+    border-radius: 50%;
+}
+#contact::before{
+    top: 6%;
+    left: 54%;
+}
+#card::before{
+    bottom:-9% ;
+    left: 32%;
+    background: linear-gradient(rgb(0,152,240),rgb(4,87,211));
+}
+#card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c25;
+    height: 100vh;
+}
+
+.face{
+    width: 250px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.05);
+    filter: blur(0.2px);
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.425);
+}
+.face h2{
+    color: #c7c7c7;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px; 
+    text-align: center;
+    margin: 37px;
+
+}
+.face .input{
+    text-align: center;
+    margin: 14px;
+}
+.face .input .inputbox{
+    display: block;
+    color: #868686;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.face .input .inputbox input{
+    width: 80%;
+    height: 42px;
+    background: #131419;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 0px 14px;
+    margin: 5px;
+    color: #fff;
+    font-size: 18px;
+    color: #03a9f4;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.forget{
+    margin-top: 30px;
+    color: #555;
+    text-align: center;
+}
+.forget a{
+    color: #ff0047;
+}
+.active{
+    background: green;
+
+}
+.active span{
+    background: white;
+    margin-left: 31px;
+}
+.light-mode #card{
+    background: #ebf5fc;
+}
+.light-mode .face{
+    background-color: rgba(255,255,255,0.425);
+}
+.light-mode .face .input .inputbox input{
+    background: #ebf5fc;
+    color:#32a3b1 ;
+}
+.light-mode .face h2{
+    color: #32a3b1;
+}
+.light-mode #navbar::before{
+    background: #ebf5fc;
+}
+.light-mode #navbar ul li a{
+    color: #32a3b1;
+}
+.light-mode #navbar ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+
